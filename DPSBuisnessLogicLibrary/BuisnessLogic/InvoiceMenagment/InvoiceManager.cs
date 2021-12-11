@@ -61,9 +61,9 @@ namespace DPSBuisnessLogicLibrary.BuisnessLogic.InvoiceMenagment
                             && _invoiceNumberValidator.CheckValue(newObject.InvoiceNumber).Item1)
                         {
                             var objectsToSaveTuple = _mapper.Map(newObject);
-                            _invoiceRepository.Add(objectsToSaveTuple.Item1);
                             if (_buyerRepository.Get(objectsToSaveTuple.Item2.NIP) == null) _buyerRepository.Add(objectsToSaveTuple.Item2);
                             if (_sellerRepository.Get(objectsToSaveTuple.Item3.NIP) == null) _sellerRepository.Add(objectsToSaveTuple.Item3);
+                            _invoiceRepository.Add(objectsToSaveTuple.Item1);
 
                             foreach (var productOnInovice in objectsToSaveTuple.Item4)
                             {
@@ -82,7 +82,7 @@ namespace DPSBuisnessLogicLibrary.BuisnessLogic.InvoiceMenagment
             }
             catch (Exception)
             {
-                return new Tuple<bool, string>(false, _messgaeFailure);
+                throw;
             }
         }
 
@@ -121,7 +121,8 @@ namespace DPSBuisnessLogicLibrary.BuisnessLogic.InvoiceMenagment
                 var product = _productRepository.Get(productCode);
                 if (product != null
                     && _productOnInvoiceValidator.CheckValue(productCode).Item1
-                    && float.TryParse(quantity, out float q) && q > 0f)
+                    && float.TryParse(quantity, out float q) && q > 0f 
+                    && product.IsActive)
                 {
                     return new Tuple<bool, string, ProductsOnInvoiceDTO>(true, "Ok",
                                                          new ProductsOnInvoiceDTO

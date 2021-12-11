@@ -34,7 +34,10 @@ namespace DPSInvoiceApp
                 ProductsDG.ItemsSource = _productList;
                 ClearTextBox(ContainerCanvas);
             }
-            MessageBox.Show(result.Item2);
+            else
+            {
+                MessageBox.Show(result.Item2);
+            }    
         }
 
         private void Add_Product_To_Invoice(object sender, RoutedEventArgs e)
@@ -69,8 +72,24 @@ namespace DPSInvoiceApp
         }
         private InvoiceDTO CreateInvoiceDTO()
         {
-            int.TryParse(BuyerFlatNumberForm.Text, out int buyerFlatNumber);
-            int.TryParse(BuyerFlatNumberForm.Text, out int sellerFlatNumber);
+            Nullable<int> buyerFlatNumber;
+            if (int.TryParse(BuyerFlatNumberForm.Text, out int c))
+            {
+                buyerFlatNumber = c;
+            }
+            else
+            {
+                buyerFlatNumber = null;
+            }
+            Nullable<int> sellerFlatNumber;
+            if (int.TryParse(SellerFlatNumberForm.Text, out int s))
+            {
+                sellerFlatNumber = s;
+            }
+            else
+            {
+                sellerFlatNumber = null;
+            }
 
             return new InvoiceDTO()
             {

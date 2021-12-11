@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFrameworkDPSLibrary.Migrations
 {
     [DbContext(typeof(MFSDbContext))]
-    [Migration("20211203204136_DailyInvoiceCounterRepository-add")]
-    partial class DailyInvoiceCounterRepositoryadd
+    [Migration("20211211202503_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,7 +26,7 @@ namespace EntityFrameworkDPSLibrary.Migrations
                     b.Property<string>("NIP")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("FlatNumber")
+                    b.Property<int?>("FlatNumber")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -67,9 +67,11 @@ namespace EntityFrameworkDPSLibrary.Migrations
             modelBuilder.Entity("EntityFrameworkDPSLibrary.Models.Invoice", b =>
                 {
                     b.Property<string>("InvoiceNumber")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("BuyerNIP")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreationTime")
@@ -79,6 +81,7 @@ namespace EntityFrameworkDPSLibrary.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("SellerNIP")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("InvoiceNumber");
@@ -114,15 +117,10 @@ namespace EntityFrameworkDPSLibrary.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("InvoiceCode")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("InvoiceNumber")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("ProductCode")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<float>("QuantityOfProduct")
@@ -130,7 +128,7 @@ namespace EntityFrameworkDPSLibrary.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("InvoiceCode");
+                    b.HasIndex("InvoiceNumber");
 
                     b.HasIndex("ProductCode");
 
@@ -142,7 +140,7 @@ namespace EntityFrameworkDPSLibrary.Migrations
                     b.Property<string>("NIP")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("FlatNumber")
+                    b.Property<int?>("FlatNumber")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -166,15 +164,11 @@ namespace EntityFrameworkDPSLibrary.Migrations
                 {
                     b.HasOne("EntityFrameworkDPSLibrary.Models.Invoice", "Invoice")
                         .WithMany()
-                        .HasForeignKey("InvoiceCode")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("InvoiceNumber");
 
                     b.HasOne("EntityFrameworkDPSLibrary.Models.Product", "Product")
                         .WithMany()
-                        .HasForeignKey("ProductCode")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ProductCode");
 
                     b.Navigation("Invoice");
 

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\sebas\source\repos\DPSInvoiceApp\obj\Release\net5.0-windows\
+C:\Users\sebas\Documents\InvoiceApp\DPSInvoiceApp\obj\Release\net5.0-windows\
 DPSInvoiceApp
 none
 false
 TRACE;RELEASE;NET;NET5_0;NETCOREAPP
-C:\Users\sebas\source\repos\DPSInvoiceApp\App.xaml
+C:\Users\sebas\Documents\InvoiceApp\DPSInvoiceApp\App.xaml
 11361527381
 
 10-1324571673
-2451063307226
+245-1905109430
 InvoiceWindow.xaml;
 
 False

@@ -10,9 +10,13 @@ namespace EntityFrameworkDPSLibrary.Models
     {
         [Key]
         public string InvoiceNumber { get; set; }
+        [Required]
         public DateTime CreationTime { get; set; }
+        [Required]
         public DateTime ModyficationTime { get; set; }
+        [Required]
         public string BuyerNIP { get; set; }
+        [Required]
         public string SellerNIP { get; set; }
 
     }

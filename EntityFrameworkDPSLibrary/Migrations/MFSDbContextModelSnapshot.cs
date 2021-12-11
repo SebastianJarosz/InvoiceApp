@@ -65,9 +65,11 @@ namespace EntityFrameworkDPSLibrary.Migrations
             modelBuilder.Entity("EntityFrameworkDPSLibrary.Models.Invoice", b =>
                 {
                     b.Property<string>("InvoiceNumber")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("BuyerNIP")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreationTime")
@@ -77,6 +79,7 @@ namespace EntityFrameworkDPSLibrary.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("SellerNIP")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("InvoiceNumber");
@@ -113,7 +116,7 @@ namespace EntityFrameworkDPSLibrary.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("InvoiceNumber")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("ProductCode")
                         .HasColumnType("nvarchar(450)");

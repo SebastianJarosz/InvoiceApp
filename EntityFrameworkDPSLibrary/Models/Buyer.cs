@@ -9,6 +9,7 @@ namespace EntityFrameworkDPSLibrary.Models
     public class Buyer
     {
         [Key]
+        [MaxLength(10)]
         public string NIP { get; set; }
         [Required]
         public string Name { get; set; }

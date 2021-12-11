@@ -1,19 +1,19 @@
 ﻿DPSInvoiceApp
-
+1.0.0.0
 
 winexe
 C#
 .cs
-C:\Users\sebas\source\repos\DPSInvoiceApp\obj\Debug\net5.0-windows\
+c:\Users\sebas\Documents\InvoiceApp\DPSInvoiceApp\obj\Debug\net5.0-windows\
 DPSInvoiceApp
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\sebas\source\repos\DPSInvoiceApp\App.xaml
+c:\Users\sebas\Documents\InvoiceApp\DPSInvoiceApp\App.xaml
 11361527381
 
-10-1324571673
-245838024522
+12-1832673905
+245113303938
 InvoiceWindow.xaml;
 
 False

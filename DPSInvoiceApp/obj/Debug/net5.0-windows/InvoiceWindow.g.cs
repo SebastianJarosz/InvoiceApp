@@ -189,7 +189,7 @@ namespace DPSInvoiceApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DPSInvoiceApp;component/invoicewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DPSInvoiceApp;V1.0.0.0;component/invoicewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\InvoiceWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

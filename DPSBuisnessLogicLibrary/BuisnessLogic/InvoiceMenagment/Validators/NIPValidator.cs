@@ -11,7 +11,7 @@ namespace DPSBuisnessLogicLibrary.BuisnessLogic.InvoiceMenagment.Validators
         {
             if (modelToValidate.Length == 10 && modelToValidate != null)
             {
-                if (int.TryParse(modelToValidate, out int c))
+                if (ulong.TryParse(modelToValidate, out ulong c))
                 {
                     return new Tuple<bool, string>(true, "OK");
                 }

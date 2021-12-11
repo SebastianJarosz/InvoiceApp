@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YvAzsIbm44w/nSgfaSjmrFNkqkWu1FTUhB+LmK4d0t3mzPulTH6xIr5LVUZ4tWpbX0gTHdRqCpfLoKdkyeMOvA==",
+  "dgSpecHash": "OXsNBF896NojS+Hwp+BHrgMHFLh/Yncg/u23n0GN+8VBn8DpByD5fPMx23JwrmXHpn1S9LgakmOleDYx16FYuA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebas\\source\\repos\\DPSBuisnessLogicLibrary\\DPSBuisnessLogicLibrary.csproj",
+  "projectFilePath": "C:\\Users\\sebas\\Documents\\InvoiceApp\\DPSBuisnessLogicLibrary\\DPSBuisnessLogicLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sebas\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",

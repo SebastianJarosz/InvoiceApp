@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t+0i6Pic8dU+lUTedmqfcyVs62BV0VdBs88L1fBpY3dXlXKcUzf7o8nC6qqLo3E0b4dwnJCb58Q7TZ6k7f9LEQ==",
+  "dgSpecHash": "yP/sLc/9ON5r99rm/OYkAu4PvwcGfDC+jO52N1cCzs31W/JJnrBX9KkZzm5zWvTFgslGAZTvsAy0+fixOYj+7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebas\\source\\repos\\DPSInvoiceApp\\DPSInvoiceApp.csproj",
+  "projectFilePath": "C:\\Users\\sebas\\Documents\\InvoiceApp\\DPSInvoiceApp\\DPSInvoiceApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sebas\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OzFnayILEpvJ1RMVmxCwNJ9+1AP3slWlHX6GnpX8LVvXvuE6BfdblmmS5v+gaqjA7a7VMhV43tiyR7ngVDTxKw==",
+  "dgSpecHash": "TM1NvCLx8TDu1ZpSVtTjXlvmDUW8RIE5DOG442JOS3O9LUm31GjNBUFYK/g+wAG3MWYv5nzEKoz3tw/jY0zxDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebas\\source\\repos\\InvoiceMenagmentTests\\InvoiceMenagmentTests.csproj",
+  "projectFilePath": "C:\\Users\\sebas\\Documents\\InvoiceApp\\InvoiceMenagmentTests\\InvoiceMenagmentTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sebas\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",

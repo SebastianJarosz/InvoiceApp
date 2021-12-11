@@ -27,4 +27,3 @@ C:\Users\sebas\Documents\InvoiceApp\EntityFrameworkDPSLibrary\obj\Debug\net5.0\E
 C:\Users\sebas\Documents\InvoiceApp\EntityFrameworkDPSLibrary\obj\Debug\net5.0\ref\EntityFrameworkDPSLibrary.dll
 C:\Users\sebas\Documents\InvoiceApp\EntityFrameworkDPSLibrary\obj\Debug\net5.0\EntityFrameworkDPSLibrary.pdb
 C:\Users\sebas\Documents\InvoiceApp\EntityFrameworkDPSLibrary\obj\Debug\net5.0\EntityFrameworkDPSLibrary.genruntimeconfig.cache
-C:\Users\sebas\Documents\InvoiceApp\EntityFrameworkDPSLibrary\obj\Debug\net5.0\EntityFrameworkDPSLibrary.csprojAssemblyReference.cache

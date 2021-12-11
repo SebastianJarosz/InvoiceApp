@@ -30,7 +30,7 @@ namespace DPSInvoiceApp
             {
                 MessageBox.Show(result.Item2);
                 InvoicesDG.ItemsSource = _invoiceMenager.GetAllInvoices();
-                _productList.Clear();
+                _productList = new List<ProductsOnInvoiceDTO>(); 
                 ProductsDG.ItemsSource = _productList;
                 ClearTextBox(ContainerCanvas);
             }
@@ -81,6 +81,7 @@ namespace DPSInvoiceApp
             {
                 buyerFlatNumber = null;
             }
+
             Nullable<int> sellerFlatNumber;
             if (int.TryParse(SellerFlatNumberForm.Text, out int s))
             {

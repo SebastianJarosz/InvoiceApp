@@ -1,0 +1,77 @@
+﻿<Window x:Class="DPSInvoiceApp.InvoiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DPSInvoiceApp"
+        mc:Ignorable="d"
+        Title="InvoiceWindow" Height="450" Width="1080">
+
+    <Grid>
+        <TabControl Background="White">
+            <TabItem Header="Lista">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid Name="InvoicesDG" AutoGenerateColumns="False" Height="437" VerticalAlignment="Top" Margin="0,-3,0,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Numer faktury" Binding="{Binding InvoiceNumber}"/>
+                            <DataGridTextColumn Header="Czas dodania" Binding="{Binding CreationTime}"/>
+                            <DataGridTextColumn Header="NIP Nabywcy" Binding="{Binding BuyerNIP}"/>
+                            <DataGridTextColumn Header="Nabywca" Binding="{Binding BuyerName}"/>
+                            <DataGridTextColumn Header="Ulica" Binding="{Binding BuyerStreet}"/>
+                            <DataGridTextColumn Header="Numer ulicy" Binding="{Binding BuyerStreetNumber}"/>
+                            <DataGridTextColumn Header="Lokal" Binding="{Binding BuyerFlatNumber}"/>
+                            <DataGridTextColumn Header="NIP sprzedawcy" Binding="{Binding SellerNIP}"/>
+                            <DataGridTextColumn Header="Sprzedawca" Binding="{Binding SellerName}"/>
+                            <DataGridTextColumn Header="Ulica" Binding="{Binding SellerStreet}"/>
+                            <DataGridTextColumn Header="Numer ulicy" Binding="{Binding SellerStreetNumber}"/>
+                            <DataGridTextColumn Header="Lokal" Binding="{Binding SellerFlatNumber}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Dodaj nową fakturę">
+                <Grid Name="ContainerCanvas" Background="#FFE5E5E5" Margin="-2,0,2,0">
+                    <Button Content="Dodaj" HorizontalAlignment="Right" Margin="12,12" VerticalAlignment="Bottom" Height="24" Width="72" Background="#FF41A955" FontSize="12" Click="Add_Invoice"/>
+                    <Label Content="Sprzedajacy" HorizontalAlignment="Left" Margin="24,12,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="SellerNameForm" HorizontalAlignment="Left" Margin="104,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Nabywca" HorizontalAlignment="Left" Margin="469,16,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="BuyerNameForm" HorizontalAlignment="Left" Margin="549,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="NIP" HorizontalAlignment="Left" Margin="26,40,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="SellerNIPForm" HorizontalAlignment="Left" Margin="106,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="NIP" HorizontalAlignment="Left" Margin="471,42,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="BuyerNIPForm" HorizontalAlignment="Left" Margin="551,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Ulica" HorizontalAlignment="Left" Margin="26,71,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="SellerStreetForm" HorizontalAlignment="Left" Margin="106,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+                    <Label Content="Ulica" HorizontalAlignment="Left" Margin="473,77,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="BuyerStreetForm" HorizontalAlignment="Left" Margin="553,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+                    <Label Content="Nr" HorizontalAlignment="Left" Margin="265,74,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.187,0.558" Height="27"/>
+                    <TextBox x:Name="SellerStreetNumberForm" HorizontalAlignment="Left" Margin="297,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+                    <Label Content="Nr" HorizontalAlignment="Left" Margin="701,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.187,0.558" Height="27"/>
+                    <TextBox x:Name="BuyerStreetNumberForm" HorizontalAlignment="Left" Margin="733,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+                    <Label Content="Nr lokalu" HorizontalAlignment="Left" Margin="27,102,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.187,0.558" Height="27"/>
+                    <TextBox x:Name="SellerFlatNumberForm" HorizontalAlignment="Left" Margin="110,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+                    <Label Content="Nr lokalu" HorizontalAlignment="Left" Margin="473,104,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.187,0.558" Height="27"/>
+                    <TextBox x:Name="BuyerFlatNumberForm" HorizontalAlignment="Left" Margin="556,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+                    <Label Content="Numer faktury" HorizontalAlignment="Left" Margin="28,147,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="InvoiceNumberForm" HorizontalAlignment="Left" Margin="118,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Data" HorizontalAlignment="Left" Margin="255,147,0,0" VerticalAlignment="Top"/>
+                    <DatePicker x:Name="InvoiceCreationDateForm" HorizontalAlignment="Left" Margin="300,148,0,0" VerticalAlignment="Top"/>
+                    <DataGrid Name="ProductsDG" AutoGenerateColumns="False" Height="136" VerticalAlignment="Bottom" Margin="0,0,0,64">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Produkt" Binding="{Binding ProductName}"/>
+                            <DataGridTextColumn Header="Kod" Binding="{Binding ProductCode}"/>
+                            <DataGridTextColumn Header="Ilość" Binding="{Binding QuantityOfProduct}"/>
+                            <DataGridTextColumn Header="Jednostka" Binding="{Binding ProductMeasureUnit}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Content="Kod produktu" HorizontalAlignment="Left" Margin="474,150,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="ProductCodeForm" HorizontalAlignment="Left" Margin="568,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+                    <Label Content="Ilość" HorizontalAlignment="Left" Margin="632,152,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="QuantityOfProductForm" HorizontalAlignment="Left" Margin="672,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37"/>
+                    <Button Content="Dodaj produkt" HorizontalAlignment="Left" Margin="723,155,0,0" VerticalAlignment="Top" Width="90" Click="Add_Product_To_Invoice"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

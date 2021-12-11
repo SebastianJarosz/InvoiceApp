@@ -1,0 +1,15 @@
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\bin\Debug\net5.0\DPSBuisnessLogicLibrary.deps.json
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\bin\Debug\net5.0\DPSBuisnessLogicLibrary.dll
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\bin\Debug\net5.0\ref\DPSBuisnessLogicLibrary.dll
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\bin\Debug\net5.0\DPSBuisnessLogicLibrary.pdb
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\bin\Debug\net5.0\EntityFrameworkDPSLibrary.dll
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\bin\Debug\net5.0\EntityFrameworkDPSLibrary.pdb
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\obj\Debug\net5.0\DPSBuisnessLogicLibrary.csprojAssemblyReference.cache
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\obj\Debug\net5.0\DPSBuisnessLogicLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\obj\Debug\net5.0\DPSBuisnessLogicLibrary.AssemblyInfoInputs.cache
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\obj\Debug\net5.0\DPSBuisnessLogicLibrary.AssemblyInfo.cs
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\obj\Debug\net5.0\DPSBuisnessLogicLibrary.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\obj\Debug\net5.0\DPSBuisnessLogicLibrary.csproj.CopyComplete
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\obj\Debug\net5.0\DPSBuisnessLogicLibrary.dll
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\obj\Debug\net5.0\ref\DPSBuisnessLogicLibrary.dll
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibrary\obj\Debug\net5.0\DPSBuisnessLogicLibrary.pdb

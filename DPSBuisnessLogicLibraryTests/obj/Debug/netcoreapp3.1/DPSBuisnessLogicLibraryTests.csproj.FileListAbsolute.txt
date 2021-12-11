@@ -1,0 +1,4 @@
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibraryTests\obj\Debug\netcoreapp3.1\DPSBuisnessLogicLibraryTests.csprojAssemblyReference.cache
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibraryTests\obj\Debug\netcoreapp3.1\DPSBuisnessLogicLibraryTests.AssemblyInfoInputs.cache
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibraryTests\obj\Debug\netcoreapp3.1\DPSBuisnessLogicLibraryTests.AssemblyInfo.cs
+C:\Users\sebas\source\repos\DPSBuisnessLogicLibraryTests\obj\Debug\netcoreapp3.1\DPSBuisnessLogicLibraryTests.csproj.CoreCompileInputs.cache

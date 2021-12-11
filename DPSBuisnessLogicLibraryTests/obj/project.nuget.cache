@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "sRqwIhdF7w124GvZYNKv71Of+DPcYxqB6UmUB5VxD6JZNs+1oRRL6naxBEPdw+YibTAuCuTfqrCQ1Aig095/jQ==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\sebas\\source\\repos\\DPSBuisnessLogicLibraryTests\\DPSBuisnessLogicLibraryTests.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Projekt DPSBuisnessLogicLibrary nie jest zgodny z elementem netcoreapp3.1 (.NETCoreApp,Version=v3.1). Projekt DPSBuisnessLogicLibrary obsługuje: net5.0 (.NETCoreApp,Version=v5.0)",
+      "libraryId": "DPSBuisnessLogicLibrary",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

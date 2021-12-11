@@ -1,0 +1,15 @@
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\bin\Debug\net5.0\EntityFrameworkDPSLibrary.deps.json
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\bin\Debug\net5.0\EntityFrameworkDPSLibrary.runtimeconfig.json
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\bin\Debug\net5.0\EntityFrameworkDPSLibrary.runtimeconfig.dev.json
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\bin\Debug\net5.0\EntityFrameworkDPSLibrary.dll
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\bin\Debug\net5.0\ref\EntityFrameworkDPSLibrary.dll
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\bin\Debug\net5.0\EntityFrameworkDPSLibrary.pdb
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\obj\Debug\net5.0\EntityFrameworkDPSLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\obj\Debug\net5.0\EntityFrameworkDPSLibrary.AssemblyInfoInputs.cache
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\obj\Debug\net5.0\EntityFrameworkDPSLibrary.AssemblyInfo.cs
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\obj\Debug\net5.0\EntityFrameworkDPSLibrary.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\obj\Debug\net5.0\EntityFrameworkDPSLibrary.dll
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\obj\Debug\net5.0\ref\EntityFrameworkDPSLibrary.dll
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\obj\Debug\net5.0\EntityFrameworkDPSLibrary.pdb
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\obj\Debug\net5.0\EntityFrameworkDPSLibrary.genruntimeconfig.cache
+C:\Users\sebas\source\repos\EntityFrameworkDPSLibrary\obj\Debug\net5.0\EntityFrameworkDPSLibrary.csprojAssemblyReference.cache
